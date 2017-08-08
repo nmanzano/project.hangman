@@ -1,0 +1,28 @@
+h1{
+  text-align: center;
+  color: red;
+  font-size: 60px;
+}
+.flex-container{
+  flex-direction: row;;
+  display: flex;
+  background-color: yellow;
+  width: 600px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.flex-item{
+  background-color: white;
+     width: 40px;
+     height: 40px;
+     margin: 4px;
+ }
+ .hangedman{
+   draw (0, 150, 150, 150);
+   draw (10, 0, 10, 600);
+   draw (0, 5, 70, 5);
+   draw (60, 5, 60, 15);
+ }
+}
