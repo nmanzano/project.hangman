@@ -21,23 +21,22 @@ h1{
  }
  button {
   display: block;
-  margin: 30s auto;
+  margin-left: 2px;
   padding: 10px;
   background-color: yellow;
   border-radius: 5px;
   margin-top: 30px;
   border: none;
   box-shadow: 1px 1px 1px 1px gray
+  height: 10px;
+  width: 28px;
 }
 button:hover {
   color: white;
   background: orange;
 }
-.letters{
-  flex-direction row;
-  display: flex;
-  flex-wrap: warp;
-  width: 730px;
-  height: 400px;
+#lettertable{
   margin: auto;
+  background-color: teal;
+
 }
