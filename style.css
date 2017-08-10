@@ -18,6 +18,7 @@ h1{
      width: 40px;
      height: 40px;
      margin: 4px;
+     color: white;
  }
  button {
   display: block;
@@ -38,5 +39,11 @@ button:hover {
 #lettertable{
   margin: auto;
   background-color: teal;
-
+}
+.wordsused{
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
