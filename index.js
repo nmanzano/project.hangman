@@ -79,12 +79,12 @@ $( "#amountlives" ).append("Lives: " + lives);
     return null;
   }
 });
-if(bbool === true){
   $( "#buttonb" ).click(function() {
+    if(bbool === true){
     $( "#b" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>B</center></h3>`);
     bbool = false;
-  }else if(abool === false){
+  }else if(bbool === false){
     return null;
   }
 });
@@ -255,43 +255,55 @@ if(ubool === true){
     $( "#u" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>U</center></h3>`);
     ubool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(vbool === true){
   $( "#buttonv" ).click(function() {
     $( "#v" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>V</center></h3>`);
     vbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(wbool === true){
   $( "#buttonw" ).click(function() {
     $( "#w" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>W</center></h3>`);
     wbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(xbool === true){
   $( "#buttonx" ).click(function() {
     $( "#x" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>X</center></h3>`);
     xbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(ybool === true){
   $( "#buttony" ).click(function() {
     $( "#y" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>Y</center></h3>`);
     ybool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(zbool === true){
   $( "#buttonz" ).click(function() {
     $( "#z" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>Z</center></h3>`);
     zbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 
 
 
