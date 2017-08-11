@@ -25,6 +25,8 @@ var wbool = true;
 var xbool = true;
 var ybool = true;
 var zbool = true;
+var win = 0;
+var userchoice = []
 
 var word;
 var words = ['pantry', 'beast', 'computer', 'spaghetti', 'library'];
@@ -35,6 +37,9 @@ var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
 var lives = 10;
 if(wordselected == "pantry"){
   word=['p', 'a', 'n', 't', 'r', 'y'];
+  if(win == word.length){
+    alert("youw win");
+  }
 }else if(wordselected == "beast"){
   word=['b', 'e', 'a', 's', 't'];
 }else if(wordselected == "computer"){
@@ -53,6 +58,8 @@ function loselives(){
   }
 }
 
+
+
 $( "#amountlives" ).append("Lives: " + lives);
 
 // $( "#message-board" ).append(`<li class='message-box'><span class='name'> `+ name+ `: </span>`+message+`</li>`);
@@ -64,17 +71,30 @@ $( "#amountlives" ).append("Lives: " + lives);
 // for(var i = 0; i < alphabet.length; i++ ) {
 //     console.log('<div class="div">' + alphabet[i])
 // }
+
+
   for (var i = 0; i < word.length; i++) {
     $(".flex-container").append(`<div class = `+word[i]+` id='flex-item'><h3 class='item10'><center>`+ word[i] +`</center></h3></div>`);
+    // console.log(word.length);
+     completedWord = word.length;
   }
+
+console.log(completedWord);
+console.log(word);
+console.log(userchoice);
+
+
 
   $( "#buttona" ).click(function() {
     if(abool === true){
     $( ".a" ).css( "color", "black" );
+    userchoice.push('a')
     if (!word.includes("a")) {
-      loselives();
+      loselives()
     $(".wordsused").append(`<h3><center>A</center></h3>`);
-    }
+  }else if (word.includes("a")){
+    win + 1;
+  }
     else if(abool === false){
       return null;
     }
@@ -87,6 +107,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("b")) {
       loselives();
       $(".wordsused").append(`<h3><center>B</center></h3>`);
+    }else if (word.includes("b")){
+      win + 1;
     }
 
     else if(bbool === false){
@@ -101,6 +123,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("c")) {
       loselives();
       $(".wordsused").append(`<h3><center>C</center></h3>`);
+    }else if (word.includes("c")){
+      win + 1;
     }
     cbool = false;
   }else if(cbool === false){
@@ -114,6 +138,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("d")) {
       loselives();
       $(".wordsused").append(`<h3><center>D</center></h3>`);
+    }else if (word.includes("d")){
+      win + 1;
     }
     dbool = false;
   }else if(dbool === false){
@@ -126,6 +152,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("e")) {
       loselives();
       $(".wordsused").append(`<h3><center>E</center></h3>`);
+    }else if (word.includes("e")){
+      win + 1;
     }
     ebool = false;
   }else if(ebool === false){
@@ -138,6 +166,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("f")) {
       loselives();
       $(".wordsused").append(`<h3><center>F</center></h3>`);
+    }else if (word.includes("f")){
+      win + 1;
     }
     fbool = false;
   }else if(fbool === false){
@@ -150,6 +180,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("g")) {
       loselives();
       $(".wordsused").append(`<h3><center>G</center></h3>`);
+    }else if (word.includes("g")){
+      win + 1;
     }
     gbool = false;
   }else if(gbool === false){
@@ -162,6 +194,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("h")) {
       loselives();
       $(".wordsused").append(`<h3><center>H</center></h3>`);
+    }else if (word.includes("h")){
+      win + 1;
     }
     hbool = false;
   }else if(hbool === false){
@@ -174,6 +208,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("i")) {
       loselives();
       $(".wordsused").append(`<h3><center>I</center></h3>`);
+    }else if (word.includes("i")){
+      win + 1;
     }
     ibool = false;
   }else if(ibool === false){
@@ -186,6 +222,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("j")) {
       loselives();
       $(".wordsused").append(`<h3><center>J</center></h3>`);
+    }else if (word.includes("j")){
+      win + 1;
     }
     jbool = false;
   }else if(jbool === false){
@@ -198,6 +236,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("k")) {
       loselives();
       $(".wordsused").append(`<h3><center>K</center></h3>`);
+    }else if (word.includes("k")){
+      win + 1;
     }
     kbool = false;
   }else if(kbool === false){
@@ -210,6 +250,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("l")) {
       loselives();
       $(".wordsused").append(`<h3><center>L</center></h3>`);
+    }else if (word.includes("l")){
+      win + 1;
     }
     lbool = false;
   }else if(lbool === false){
@@ -222,6 +264,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("m")) {
       loselives();
       $(".wordsused").append(`<h3><center>M</center></h3>`);
+    }else if (word.includes("m")){
+      win + 1;
     }
     mbool = false;
   }else if(mbool === false){
@@ -234,6 +278,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("n")) {
       loselives();
       $(".wordsused").append(`<h3><center>N</center></h3>`);
+    }else if (word.includes("n")){
+      win + 1;
     }
     nbool = false;
   }else if(nbool === false){
@@ -246,6 +292,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("o")) {
       loselives();
       $(".wordsused").append(`<h3><center>O</center></h3>`);
+    }else if (word.includes("o")){
+      win + 1;
     }
     obool = false;
   }else if(obool === false){
@@ -258,6 +306,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("p")) {
       loselives();
       $(".wordsused").append(`<h3><center>P</center></h3>`);
+    }else if (word.includes("p")){
+      win + 1;
     }
     pbool = false;
   }else if(pbool === false){
@@ -267,9 +317,11 @@ $( "#amountlives" ).append("Lives: " + lives);
   $( "#buttonq" ).click(function() {
     if(qbool === true){
     $( ".q" ).css( "color", "black" );
-    if (!word.includes("w")) {
+    if (!word.includes("q")) {
       loselives();
       $(".wordsused").append(`<h3><center>Q</center></h3>`);
+    }else if (word.includes("q")){
+      win + 1;
     }
     qbool = false;
   }else if(qbool === false){
@@ -282,6 +334,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("r")) {
       loselives();
       $(".wordsused").append(`<h3><center>R</center></h3>`);
+    }else if (word.includes("r")){
+      win + 1;
     }
     rbool = false;
   }else if(rbool === false){
@@ -294,6 +348,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("s")) {
       loselives();
       $(".wordsused").append(`<h3><center>S</center></h3>`);
+    }else if (word.includes("s")){
+      win + 1;
     }
     sbool = false;
   }else if(sbool === false){
@@ -306,6 +362,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("t")) {
       loselives();
       $(".wordsused").append(`<h3><center>T</center></h3>`);
+    }else if (word.includes("t")){
+      win + 1;
     }
     tbool = false;
   }else if(tbool === false){
@@ -318,6 +376,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("u")) {
       loselives();
       $(".wordsused").append(`<h3><center>U</center></h3>`);
+    }else if (word.includes("u")){
+      win + 1;
     }
     ubool = false;
   }else if(ubool === false){
@@ -330,6 +390,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("v")) {
       loselives();
       $(".wordsused").append(`<h3><center>V</center></h3>`);
+    }else if (word.includes("v")){
+      win + 1;
     }
     vbool = false;
   }else if(vbool === false){
@@ -342,6 +404,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("w")) {
       loselives();
       $(".wordsused").append(`<h3><center>W</center></h3>`);
+    }else if (word.includes("w")){
+      win + 1;
     }
     wbool = false;
   }else if(wbool === false){
@@ -354,6 +418,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("c")) {
       loselives();
       $(".wordsused").append(`<h3><center>X</center></h3>`);
+    }else if (word.includes("x")){
+      win + 1;
     }
     xbool = false;
   }else if(xbool === false){
@@ -366,6 +432,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("y")) {
       loselives();
       $(".wordsused").append(`<h3><center>Y</center></h3>`);
+    }else if (word.includes("y")){
+      win + 1;
     }
     ybool = false;
   }else if(ybool === false){
@@ -378,6 +446,8 @@ $( "#amountlives" ).append("Lives: " + lives);
     if (!word.includes("z")) {
       loselives();
       $(".wordsused").append(`<h3><center>Z</center></h3>`);
+    }else if (word.includes("z")){
+      win + 1;
     }
     zbool = false;
   }else if(zbool === false){
