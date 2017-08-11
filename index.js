@@ -25,6 +25,7 @@ var wbool = true;
 var xbool = true;
 var ybool = true;
 var zbool = true;
+
 var word;
 var words = ['pantry', 'beast', 'computer', 'spaghetti', 'library'];
 var wordselected = words[Math.floor(Math.random()*5)];
@@ -34,9 +35,10 @@ var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
 var lives = 10;
 if(wordselected == "pantry"){
   word=['p', 'a', 'n', 't', 'r', 'y'];
-  i
+  ("#buttonp")
 }else if(wordselected == "beast"){
   word=['b', 'e', 'a', 's', 't'];
+
 }else if(wordselected == "computer"){
    word=['c', 'o', 'm', 'p', 'u', 't', 'e', 'r'];
 }else if(wordselected == "spaghetti"){
@@ -45,10 +47,12 @@ if(wordselected == "pantry"){
   word=['l', 'i', 'b', 'r', 'a', 'r', 'y'];
 }
 function loselives(){
-  lives - 1;
-}
-if(lives == 0){
-  alert("Game Over");
+  lives = lives - 1;
+  $( "#amountlives" ).empty();
+  $( "#amountlives" ).append("Lives: " + lives);
+  if(lives == 0){
+    alert("Game Over");
+  }
 }
 
 $( "#amountlives" ).append("Lives: " + lives);
@@ -65,15 +69,12 @@ $( "#amountlives" ).append("Lives: " + lives);
   for (var i = 0; i < word.length; i++) {
     $(".flex-container").append(`<div id = `+word[i]+` class='flex-item'><h3 id='item10'><center>`+ word[i] +`</center></h3></div>`);
   }
-  $(".buttonclass").click(function(){
-     loselives();
-  });
-
 
   $( "#buttona" ).click(function() {
     if(abool === true){
     $( "#a" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>A</center></h3>`);
+    loselives();
     abool = false
   }else if(abool === false){
     return null;
@@ -83,6 +84,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(bbool === true){
     $( "#b" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>B</center></h3>`);
+    loselives();
     bbool = false;
   }else if(bbool === false){
     return null;
@@ -92,6 +94,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(cbool === true){
     $( "#c" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>C</center></h3>`);
+    loselives();
     cbool = false;
   }else if(cbool === false){
     return null;
@@ -101,6 +104,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(dbool === true){
     $( "#d" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>D</center></h3>`);
+    loselives();
     dbool = false;
   }else if(dbool === false){
     return null;
@@ -110,6 +114,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(ebool === true){
     $( "#e" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>E</center></h3>`);
+    loselives();
     ebool = false;
   }else if(ebool === false){
     return null;
@@ -119,6 +124,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(fbool === true){
     $( "#f" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>F</center></h3>`);
+    loselives();
     fbool = false;
   }else if(fbool === false){
     return null;
@@ -128,6 +134,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(gbool === true){
     $( "#g" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>G</center></h3>`);
+    loselives();
     gbool = false;
   }else if(gbool === false){
     return null;
@@ -137,6 +144,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(hbool === true){
     $( "#h" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>H</center></h3>`);
+    loselives();
     hbool = false;
   }else if(hbool === false){
     return null;
@@ -146,6 +154,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(ibool === true){
     $( "#i" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>I</center></h3>`);
+    loselives();
     ibool = false;
   }else if(ibool === false){
     return null;
@@ -155,6 +164,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(jbool === true){
     $( "#j" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>J</center></h3>`);
+    loselives();
     jbool = false;
   }else if(jbool === false){
     return null;
@@ -164,6 +174,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(kbool === true){
     $( "#k" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>K</center></h3>`);
+    loselives();
     kbool = false;
   }else if(kbool === false){
     return null;
@@ -173,6 +184,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(lbool === true){
     $( "#l" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>L</center></h3>`);
+    loselives();
     lbool = false;
   }else if(lbool === false){
     return null;
@@ -182,6 +194,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(mbool === true){
     $( "#m" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>M</center></h3>`);
+    loselives();
     mbool = false;
   }else if(mbool === false){
     return null;
@@ -191,6 +204,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(nbool === true){
     $( "#n" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>N</center></h3>`);
+    loselives();
     nbool = false;
   }else if(nbool === false){
     return null;
@@ -200,6 +214,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(obool === true){
     $( "#o" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>O</center></h3>`);
+    loselives();
     obool = false;
   }else if(obool === false){
     return null;
@@ -209,6 +224,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(pbool === true){
     $( "#p" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>P</center></h3>`);
+    loselives();
     pbool = false;
   }else if(pbool === false){
     return null;
@@ -218,6 +234,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(qbool === true){
     $( "#q" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>Q</center></h3>`);
+    loselives();
     qbool = false;
   }else if(qbool === false){
     return null;
@@ -227,6 +244,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(rbool === true){
     $( "#r" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>R</center></h3>`);
+    loselives();
     rbool = false;
   }else if(rbool === false){
     return null;
@@ -236,6 +254,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(sbool === true){
     $( "#s" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>S</center></h3>`);
+    loselives();
     sbool = false;
   }else if(sbool === false){
     return null;
@@ -245,6 +264,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(tbool === true){
     $( "#t" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>T</center></h3>`);
+    loselives();
     tbool = false;
   }else if(tbool === false){
     return null;
@@ -254,6 +274,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(ubool === true){
     $( "#u" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>U</center></h3>`);
+    loselives();
     ubool = false;
   }else if(ubool === false){
     return null;
@@ -263,6 +284,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(vbool === true){
     $( "#v" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>V</center></h3>`);
+    loselives();
     vbool = false;
   }else if(vbool === false){
     return null;
@@ -272,6 +294,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(wbool === true){
     $( "#w" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>W</center></h3>`);
+    loselives();
     wbool = false;
   }else if(wbool === false){
     return null;
@@ -281,6 +304,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(xbool === true){
     $( "#x" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>X</center></h3>`);
+    loselives();
     xbool = false;
   }else if(xbool === false){
     return null;
@@ -290,6 +314,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(ybool === true){
     $( "#y" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>Y</center></h3>`);
+    loselives();
     ybool = false;
   }else if(ybool === false){
     return null;
@@ -299,6 +324,7 @@ $( "#amountlives" ).append("Lives: " + lives);
     if(zbool === true){
     $( "#z" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>Z</center></h3>`);
+    loselives();
     zbool = false;
   }else if(zbool === false){
     return null;
