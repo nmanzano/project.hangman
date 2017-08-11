@@ -88,219 +88,219 @@ $( "#amountlives" ).append("Lives: " + lives);
     return null;
   }
 });
-if(cbool === true){
   $( "#buttonc" ).click(function() {
+    if(cbool === true){
     $( "#c" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>C</center></h3>`);
     cbool = false;
-  }else if(abool === false){
+  }else if(cbool === false){
     return null;
   }
 });
-if(dbool === true){
   $( "#buttond" ).click(function() {
+    if(dbool === true){
     $( "#d" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>D</center></h3>`);
     dbool = false;
-  }else if(abool === false){
+  }else if(dbool === false){
     return null;
   }
 });
-if(ebool === true){
   $( "#buttone" ).click(function() {
+    if(ebool === true){
     $( "#e" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>E</center></h3>`);
     ebool = false;
-  }else if(abool === false){
+  }else if(ebool === false){
     return null;
   }
 });
-if(fbool === true){
   $( "#buttonf" ).click(function() {
+    if(fbool === true){
     $( "#f" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>F</center></h3>`);
     fbool = false;
-  }else if(abool === false){
+  }else if(fbool === false){
     return null;
   }
 });
-if(gbool === true){
   $( "#buttong" ).click(function() {
+    if(gbool === true){
     $( "#g" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>G</center></h3>`);
     gbool = false;
-  }else if(abool === false){
+  }else if(gbool === false){
     return null;
   }
 });
-if(hbool === true){
   $( "#buttonh" ).click(function() {
+    if(hbool === true){
     $( "#h" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>H</center></h3>`);
     hbool = false;
-  }else if(abool === false){
+  }else if(hbool === false){
     return null;
   }
 });
-if(ibool === true){
   $( "#buttoni" ).click(function() {
+    if(ibool === true){
     $( "#i" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>I</center></h3>`);
     ibool = false;
-  }else if(abool === false){
+  }else if(ibool === false){
     return null;
   }
 });
-if(jbool === true){
   $( "#buttonj" ).click(function() {
+    if(jbool === true){
     $( "#j" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>J</center></h3>`);
     jbool = false;
-  }else if(abool === false){
+  }else if(jbool === false){
     return null;
   }
 });
-if(kbool === true){
   $( "#buttonk" ).click(function() {
+    if(kbool === true){
     $( "#k" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>K</center></h3>`);
     kbool = false;
-  }else if(abool === false){
+  }else if(kbool === false){
     return null;
   }
 });
-if(lbool === true){
   $( "#buttonl" ).click(function() {
+    if(lbool === true){
     $( "#l" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>L</center></h3>`);
     lbool = false;
-  }else if(abool === false){
+  }else if(lbool === false){
     return null;
   }
 });
-if(mbool === true){
   $( "#buttonm" ).click(function() {
+    if(mbool === true){
     $( "#m" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>M</center></h3>`);
     mbool = false;
-  }else if(abool === false){
+  }else if(mbool === false){
     return null;
   }
 });
-if(nbool === true){
   $( "#buttonn" ).click(function() {
+    if(nbool === true){
     $( "#n" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>N</center></h3>`);
     nbool = false;
-  }else if(abool === false){
+  }else if(nbool === false){
     return null;
   }
 });
-if(obool === true){
   $( "#buttono" ).click(function() {
+    if(obool === true){
     $( "#o" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>O</center></h3>`);
     obool = false;
-  }else if(abool === false){
+  }else if(obool === false){
     return null;
   }
 });
-if(pbool === true){
   $( "#buttonp" ).click(function() {
+    if(pbool === true){
     $( "#p" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>P</center></h3>`);
     pbool = false;
-  }else if(abool === false){
+  }else if(pbool === false){
     return null;
   }
 });
-if(qbool === true){
   $( "#buttonq" ).click(function() {
+    if(qbool === true){
     $( "#q" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>Q</center></h3>`);
     qbool = false;
-  }else if(abool === false){
+  }else if(qbool === false){
     return null;
   }
 });
-if(rbool === true){
   $( "#buttonr" ).click(function() {
+    if(rbool === true){
     $( "#r" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>R</center></h3>`);
     rbool = false;
-  }else if(abool === false){
+  }else if(rbool === false){
     return null;
   }
 });
-if(sbool === true){
   $( "#buttons" ).click(function() {
+    if(sbool === true){
     $( "#s" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>S</center></h3>`);
     sbool = false;
-  }else if(abool === false){
+  }else if(sbool === false){
     return null;
   }
 });
-if(tbool === true){
   $( "#buttont" ).click(function() {
+    if(tbool === true){
     $( "#t" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>T</center></h3>`);
     tbool = false;
-  }else if(abool === false){
+  }else if(tbool === false){
     return null;
   }
 });
-if(ubool === true){
   $( "#buttonu" ).click(function() {
+    if(ubool === true){
     $( "#u" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>U</center></h3>`);
     ubool = false;
-  }else if(abool === false){
+  }else if(ubool === false){
     return null;
   }
 });
-if(vbool === true){
   $( "#buttonv" ).click(function() {
+    if(vbool === true){
     $( "#v" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>V</center></h3>`);
     vbool = false;
-  }else if(abool === false){
+  }else if(vbool === false){
     return null;
   }
 });
-if(wbool === true){
   $( "#buttonw" ).click(function() {
+    if(wbool === true){
     $( "#w" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>W</center></h3>`);
     wbool = false;
-  }else if(abool === false){
+  }else if(wbool === false){
     return null;
   }
 });
-if(xbool === true){
   $( "#buttonx" ).click(function() {
+    if(xbool === true){
     $( "#x" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>X</center></h3>`);
     xbool = false;
-  }else if(abool === false){
+  }else if(xbool === false){
     return null;
   }
 });
-if(ybool === true){
   $( "#buttony" ).click(function() {
+    if(ybool === true){
     $( "#y" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>Y</center></h3>`);
     ybool = false;
-  }else if(abool === false){
+  }else if(ybool === false){
     return null;
   }
 });
-if(zbool === true){
   $( "#buttonz" ).click(function() {
+    if(zbool === true){
     $( "#z" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>Z</center></h3>`);
     zbool = false;
-  }else if(abool === false){
+  }else if(zbool === false){
     return null;
   }
 });
