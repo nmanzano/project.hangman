@@ -47,3 +47,25 @@ button:hover {
   justify-content: center;
   margin: auto;
 }
+
+/*Start of Willow's work...*/
+#object1 {
+  border: solid black;
+  width: 500px;
+  height: 600px;
+  margin-left: 150px;
+}
+#object2{
+  border: solid red;
+  position: absolute;
+  top: 60%;
+}
+#savage1 {
+  width:500px;
+  height: 600px;
+}
+#savage2 {
+  width:500px;
+  height: 600px;
+  border: solid black;
+}
