@@ -68,147 +68,188 @@ $( "#amountlives" ).append("Lives: " + lives);
   $(".buttonclass").click(function(){
      loselives();
   });
-if(abool === true){
+
+
   $( "#buttona" ).click(function() {
+    if(abool === true){
     $( "#a" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>A</center></h3>`);
-    abool = false;
-    console.log(abool);
-  });
-}
+    abool = false
+  }else if(abool === false){
+    return null;
+  }
+});
 if(bbool === true){
   $( "#buttonb" ).click(function() {
     $( "#b" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>B</center></h3>`);
     bbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(cbool === true){
   $( "#buttonc" ).click(function() {
     $( "#c" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>C</center></h3>`);
     cbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(dbool === true){
   $( "#buttond" ).click(function() {
     $( "#d" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>D</center></h3>`);
     dbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(ebool === true){
   $( "#buttone" ).click(function() {
     $( "#e" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>E</center></h3>`);
     ebool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(fbool === true){
   $( "#buttonf" ).click(function() {
     $( "#f" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>F</center></h3>`);
     fbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(gbool === true){
   $( "#buttong" ).click(function() {
     $( "#g" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>G</center></h3>`);
     gbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(hbool === true){
   $( "#buttonh" ).click(function() {
     $( "#h" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>H</center></h3>`);
     hbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(ibool === true){
   $( "#buttoni" ).click(function() {
     $( "#i" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>I</center></h3>`);
     ibool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(jbool === true){
   $( "#buttonj" ).click(function() {
     $( "#j" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>J</center></h3>`);
     jbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(kbool === true){
   $( "#buttonk" ).click(function() {
     $( "#k" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>K</center></h3>`);
     kbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(lbool === true){
   $( "#buttonl" ).click(function() {
     $( "#l" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>L</center></h3>`);
     lbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(mbool === true){
   $( "#buttonm" ).click(function() {
     $( "#m" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>M</center></h3>`);
     mbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(nbool === true){
   $( "#buttonn" ).click(function() {
     $( "#n" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>N</center></h3>`);
     nbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(obool === true){
   $( "#buttono" ).click(function() {
     $( "#o" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>O</center></h3>`);
     obool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(pbool === true){
   $( "#buttonp" ).click(function() {
     $( "#p" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>P</center></h3>`);
     pbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(qbool === true){
   $( "#buttonq" ).click(function() {
     $( "#q" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>Q</center></h3>`);
     qbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(rbool === true){
   $( "#buttonr" ).click(function() {
     $( "#r" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>R</center></h3>`);
     rbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(sbool === true){
   $( "#buttons" ).click(function() {
     $( "#s" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>S</center></h3>`);
     sbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(tbool === true){
   $( "#buttont" ).click(function() {
     $( "#t" ).css( "color", "black" );
     $(".wordsused").append(`<h3><center>T</center></h3>`);
     tbool = false;
-  });
-}
+  }else if(abool === false){
+    return null;
+  }
+});
 if(ubool === true){
   $( "#buttonu" ).click(function() {
     $( "#u" ).css( "color", "black" );
